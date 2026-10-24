@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Profesional</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Archivo de estilos CSS -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="logo">VP</div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <button id="theme-toggle" aria-label="Cambiar tema">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </nav>
+
+    <!-- Sección Hero / Inicio -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Hola, soy <span class="highlight">Víctor Manuel</span></h1>
+            <p class="subtitle">Desarrollador de Software & Apasionado por la Tecnología</p>
+            <p class="description">
+                Transformo ideas en experiencias digitales atractivas, funcionales y de alto rendimiento.
+            </p>
+            <div class="hero-buttons">
+                <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
+                <a href="#contacto" class="btn btn-secondary">Contactar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi" class="section">
+        <h2 class="section-title">Sobre Mí</h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p>
+                    Soy un profesional enfocado en el desarrollo web y la creación de soluciones digitales eficiente. Me apasiona aprender nuevas tecnologías, optimizar procesos y construir interfaces intuitivas y profesionales.
+                </p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card"><i class="fa-brands fa-html5"></i> HTML5</div>
+                <div class="skill-card"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+                <div class="skill-card"><i class="fa-brands fa-js"></i> JavaScript</div>
+                <div class="skill-card"><i class="fa-brands fa-python"></i> Python</div>
+                <div class="skill-card"><i class="fa-solid fa-code"></i> C#</div>
+                <div class="skill-card"><i class="fa-brands fa-git-alt"></i> Git</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="section bg-alt">
+        <h2 class="section-title">Servicios</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <h3>Desarrollo Web</h3>
+                <p>Creación de sitios web modernos, rápidos y adaptados a todo tipo de dispositivos.</p>
+            </div>
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                <h3>Diseño Responsive</h3>
+                <p>Interfaces optimizadas para ofrecer una experiencia perfecta en teléfonos, tabletas y computadoras.</p>
+            </div>
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-gears"></i></div>
+                <h3>Mantenimiento & Optimización</h3>
+                <p>Mejora de velocidad, SEO básico y actualización constante de plataformas existentes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos" class="section">
+        <h2 class="section-title">Proyectos Destacados</h2>
+        <div class="cards-grid">
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Plataforma Web Personal</h3>
+                    <p>Portafolio profesional interactivo desarrollado con HTML, CSS3 y JavaScript moderno.</p>
+                    <a href="#" class="project-link">Ver detalles <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Aplicación de Gestión</h3>
+                    <p>Herramienta para automatización de tareas y gestión de recursos eficientes.</p>
+                    <a href="#" class="project-link">Ver detalles <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="section bg-alt">
+        <h2 class="section-title">Contacto</h2>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Mensaje enviado correctamente');">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" required placeholder="Tu nombre completo">
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" required placeholder="tucorreo@ejemplo.com">
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" rows="5" required placeholder="¿En qué puedo ayudarte?"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2026 Víctor Manuel Polanco. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Script para funcionalidad Dark Mode -->
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const icon = themeToggle.querySelector('i');
+
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-theme');
+            if (document.body.classList.contains('dark-theme')) {
+                icon.className = 'fa-solid fa-sun';
+            } else {
+                icon.className = 'fa-solid fa-moon';
+            }
+        });
+    </script>
+</body>
+</html>
